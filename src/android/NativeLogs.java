@@ -63,7 +63,7 @@ public class NativeLogs extends CordovaPlugin {
         while( (nb < _nbLines) && (logs.size() > 0) ) {
             log += logs.getLast();
             log += "\n";
-            logs.removeLast();
+            logs.remove(logs.getLast());
             nb++;
         }
         return log;
